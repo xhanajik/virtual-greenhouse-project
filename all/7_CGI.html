@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Cancer Genome Interpreter</h2>
+                     <div class="subheading mb-3"><a href="https://www.cancergenomeinterpreter.org/home">webpage link</a></div>
+                    <p>
+                      CGI is another platform for interpreting tumor alterations according
+to their biological and clinical relevance. The system supports clinical
+decision-making by annotating potential tumorigenic alterations and
+their effect on treatment response in newly sequenced cancer genomes
+based on various evidence levels [1]. CGI is available at http://www.
+cancergenomeinterpreter.org.
+<br> <br>
+                     <div class="subheading mb-3"> Data </div>
+The CGI platform incorporates different databases, which are
+utilized to annotate genomic sequencing data. All of them are also
+available for download on the CGI website. Tamborero et al. describes
+the databases in the following way [1]: <br> <br>
+                  1. Catalog of Cancer Genes—This data is vital to identify the alterations
+responsible for tumorigenic traits. Further, each cancer
+gene was annotated with the following data: malignancies it drives arranged based on the evidence, types of involved alterations, sources for this information, the context in which the alterations are tumorigenic, and the mode of action in tumorigenesis.
+                  <br>
+                  Altogether, the database contains 837 cancer genes for 193 cancer
+types. The data in this database was collected from manually
+curated resources and literature. However, most of the detected
+mutations in cancer genes are of uncertain evidence; therefore,
+CGI incorporates an additional catalog.
+<br> <br>
+                  2. Catalog of Validated Oncogenic Mutations—The catalog comprises
+annotations of protein-affecting mutations (PAMs) that
+occur in genes of the Catalog of Cancer Genes. In the CDSS,
+this database is used to label proven tumorigenic alterations
+as drivers. It contains 5,314 validated mutations, not excluding
+cancer-predisposing variants. Nevertheless, a cohort found that
+over 85% of PAMs in cancer genes are of unspecified significance
+for tumorigenic attributes. <br>
+Therefore, CGI uses OncodriveMUT, a novel prediction tool, to
+identify PAMs that are most likely drivers among the variants
+of unknown significance [1]. CGI provides the attributes that
+impacted the OncodriveMUT algorithmto classify each mutation
+as potentially tumorigenic in the results report.
+                  <br> <br>
+                  3. Database of genomic determinants of anti-cancer drug response
+— Since tumor alterations may affect the response to anti-cancer
+therapies, CGI implements this database to match alterations to
+biomarkers or target gene sequences that affect drug responses.
+This database comprises two separate resources. <br>
+                  First is the Cancer Biomarkers database, which contains
+1,624 genomic biomarkers of response to 310 drugs across
+130 cancer types. The biomarker records include various
+reactions like sensitivity, resistance, or toxicity. The biomarkers
+are sorted according to levels of clinical evidence (for
+example, pre-clinical data, case reports, clinical trials, and
+guidelines) and are curated and updated by a board of
+experts in the field of oncology and genomics.
+                  <br>
+                  The second database is the Cancer Bioactivities database,
+containing 20,243 chemical compound-protein product interactions.
+This database mainly aids research purposes.
+                  <br><br>
+                   <div class="subheading mb-3"> Approach </div>
+In order to annotate and assess the tumor alterations according
+to different levels of evidence, the CGI uses various new or
+already established resources and computational techniques [1]. After
+the system receives input and automatically reformats it to its
+standardized format, the CDSS follows up with two processes [1]. 
+<br> <br>
+                  Firstly, CGI identifies putative oncogenic events. This step consists
+of three analyses, the first of which is a mutation analysis, where the
+identified mutations are classified based on their oncogenic characteristics
+as known oncogenic, predicted driver, predicted passenger,
+or polymorphism. The following analysis focuses on copy number
+alteration (CNA), where the same levels are appointed, excluding
+polymorphism. The last is a translocation analysis, where the translocations
+are categorized into two groups: either a known oncogenic
+or uncertain significance [1]. The catalogs of cancer genes and validated
+oncogenic mutations are used in the classification. Additionally,
+OncodriveMUT is used to evaluate the oncogenic effects of mutations
+of uncertain significance in driver genes [1].
+                  <br> <br>
+                  Secondly, potentially actionable events are recognized to provide
+clinical decision support. Both the biomarkers and bioactivities databases
+are utilized in this process [1]. The output of this step is an interactive
+report of in silico drug prescriptions, where individual drugs
+or drug combinations are deemed either resistant, non-responsive,
+or responsive [1]. In addition to the alterations, linked therapies,
+and drug effects, the interactive report contains references to related
+guidelines or studies supporting the recommendation and biomarker
+and tumor matches [1].
+                  <br> <br>
+                    <div class="subheading mb-3"> Usage </div>
+                  Users can provide genomic alterations as input in many formats.
+The tumor type of the analyzed samples is also required to
+ensure cancer-specific recommendations. Subsequently, CGI will perform
+the aforementioned analyses to find variations that can be considered
+biomarkers of drug effects. Both the results of the alteration
+analysis and the drug effects are reported using interactive tables,
+which allows for querying the results. CGI can also be run through an
+API (application programming interface) that partially implements
+the website functionality [1].
+                  <br> <br>
+                    <div class="subheading mb-3"> Advantages </div>
+                  CGI assesses and reports co-occurring alterations that
+affect treatment response. For example, the co-existence of biomarkers
+of resistance and sensitivity to the same drug and biomarkers of drug
+sensitivity that are dependent on other co-occurring genomic events
+[1].
+Another practical information that is included in the CGI knowledge
+base (specifically in the biomarkers database) and reports are the
+negative results of clinical trials. This type of information is practical
+for not only clinicians but also oncology researchers [1].
+                    <hr>
+1. TAMBORERO, David; RUBIO-PEREZ, Carlota; DEU-PONS,
+Jordi; SCHROEDER, Michael P.; VIVANCOS, Ana; ROVIRA,
+Ana; TUSQUETS, Ignasi; ALBANELL, Joan; RODON, Jordi;
+TABERNERO, Josep; TORRES, Carmen de; DIENSTMANN, Rodrigo;
+GONZALEZ-PEREZ, Abel; LOPEZ-BIGAS, Nuria. Cancer
+Genome Interpreter annotates the biological and clinical relevance
+of tumor alterations. Genome Medicine. 2018, vol. 10, no. 1,
+p. 25. issn 1756-994X. Available from doi: 10.1186/s13073-018-
+0531-8.<br>
+                    </p>

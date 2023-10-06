@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">QIAGEN Clinical Insight Interpret One</h2>
+                     <div class="subheading mb-3"><a href="https://digitalinsights.qiagen.com/products-overview/clinical-insights-portfolio/qiagen-clinical-insight/qci-interpret-one/#">webpage link</a></div>
+                    <p>
+                    QIAGEN Clinical Insights is another commercial clinical decision
+support tool portfolio that includes tools that translates molecular
+data into therapy recommendations. <br><br>
+Similar to NAVIFY, QCI Interpret One implements a tier classification;
+however, it uses two types of guidelines. AMP guidelines define
+which variants are actionable, and American College of Medical Genetics
+and Genomics (ACMG) guidelines specify pathogenicity [1]. In
+contrast to NAVIFY, QCI does not automatically prioritize alterations
+or treatment recommendations but leaves this option to clinicians [1,
+2]. On the other hand, QCI does include laboratory observations, the
+effect on protein, predictive outcomes, somatic frequency, a thorough
+explanation of the classifications, and an interactive genome browser
+[1].
+<br><br>
+                     <div class="subheading mb-3"> Data </div>
+                     Oncology practice guidelines from organizations like the American
+Society of Clinical Oncology,NCCN, European Society for Medical
+Oncology, Clinical Pharmacogenetics Implementation Consortium,
+College of American Pathologists, WHO, and European LeukemiaNet
+are taken into account by QCI [1]. Other considered sources and
+agencies include the FDA, EMA, and Pharmaceuticals and Medical
+Devices Agency drug labels. Their official website states [2] (at the
+time of writing) that QCI Interpret for Oncology contains over 6.4
+million variants characterized in 18,000 genes, with around 60,000
+new variants added annually.
+<br><br>
+                     <div class="subheading mb-3"> Approach </div>
+The QCI Interpret takes a VCF (Variant Call Format, a
+standard file format used to express variations in gene sequences)
+input file, classifies the variants using the guidelines mentioned above,
+and recommends treatments based on the individual variants. At
+the same time, clinicians can upload small nucleotide variations and
+copy number variations or fusions for an integrative view [1, 2].
+Like NAVIFY, it can recommend combination therapies for tier I variants
+and includes currently enrolling relevant clinical guidelines in
+its recommendations [1]. Additionally, QCI does include off-label
+suggestions but only if requested. QCI also suggested therapies for
+targetable aberrations, even if they were not exact matches with drugs
+[1]. The final clinical report generation time is usually less than 60
+minutes [1], and it contains clinically relevant variants, interpretations,
+and references specified throughout the assessment [2]. Their
+website [2] provides the following list of information included in
+each report:
+
+<ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                           Molecular function
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Therapeutic, prognostic, and diagnostic relevance
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Variant interactions, such as effect of co-occurring variants on
+therapies, drug resistance and sensitivities (clinical practice guideline recommendations, relevant local recruiting clinical trials, FDA-approved drug therapies, primary literature references)
+                        </li>
+                    </ul>
+                    <div class="subheading mb-3"> Limitations </div>
+                    Much like other alteration interpreters, it does not include
+non-drug treatments.
+                    <hr>
+1. PERAKIS, Samantha O; WEBER, Sabrina; ZHOU, Qing; GRAF,
+Ricarda; HOJAS, Sabine; RIEDL, Jakob M; GERGER, Armin;
+DANDACHI, Nadia; BALIC, Marija; HOEFLER, Gerald; SCHUURING,
+Ed; GROEN, Harry J M; GEIGL, Jochen B; HEITZER, Ellen; SPEICHER, Michael R. Comparison of three commercial
+decision support platforms for matching of next-generation sequencing
+results with therapies in patients with cancer. ESMO
+Open. 2020, vol. 5, no. 5.<br>
+2. QIAGEN, QCI Interpret for Oncology [online] [visited on 2022-12-
+01]. Available from: https://digitalinsights.qiagen.com/
+products-overview/clinical-insights-portfolio/qiagenclinical-
+insight/qci-interpret-one.<br>
+                    </p>

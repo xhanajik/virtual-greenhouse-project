@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Watson for Oncology (WFO)</h2>
+                     <div class="subheading mb-3"><a href="https://www.ibm.com/watson-health/solutions">webpage link</a></div>
+                    <p>IBM developed this CDSS with the help of oncologists based at Memorial
+Sloan Kettering Cancer Center (MSKCC), who also curated literature
+in which they evaluated their experience and knowledge. The
+training of WFO lasted over four years; since then, the system gets
+updated once every one to two months [1]. WFO has been in use
+since 2012. Nevertheless, the IBM United States Sales Manual states
+that the service was discontinued in July 2022, while in Europe, the
+product has only been withdrawn from marketing [2, 3].
+                     <div class="subheading mb-3"> Approach </div>
+Its uniqueness compared to other CDSSs stems from the
+majority of its knowledge being collected from literature, protocols,
+guidelines, patient charts, and test cases and the input of experts
+from the MSKCC [4, 5]. Like most CDSSs, WFO looks for traits
+in patients’ EHRs, genetic information, and operability status to find
+suitable treatment plans. It then uses machine learning and natural language
+processing techniques to process text documents and identify
+literature matching the patients’ characteristics [6].
+                    <br> <br>
+                    As an output, WFO produces ranked recommendations, such as
+anticancer drugs, their combinations, and radiation and hormone
+therapies, with the associated NCCN guidelines and other evidence
+to support the recommendations [5, 6]. WFO also supplies a link to
+publications concerning each treatment plan and literature from the
+MSKCC database [4]. As for additional information, WFO provides
+drug use instructions for each treatment plan [1], survival rate [5],
+and incidence of side effects [5]. <br>
+                    Each treatment recommendation is categorized into one of three
+groups [1]:
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                           green ("recommended") = recommendations with strong evidence
+in their favor
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            yellow ("for consideration") = potentially suitable alternative
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            red ("not recommended") = treatment with contraindications
+or lack of strong evidence
+                        </li>
+                    </ul>
+                    The use of WFO is not limited to any type of cancer, and there are
+reports of its use in relation to prostate, breast, lung, gastric, thyroid,
+cervical, colorectal, and other types of cancers [1, 4]. On the other
+hand, WFO exclusively provides treatment options and additional
+information related to them (no diagnostic or additional support).
+                    <br> <br>
+                    <div class="subheading mb-3"> Validation </div>
+                    In 2021, Zhou Jie et al. [1] conducted a meta-analysis of
+WFOin clinical application in which they compared recommendations
+from WFO and a Multidisciplinary Team (MDT). By their definition,
+WFO’s recommendation was concordant if the MDT’s recommended
+treatment fell into the green or yellow category. They found that the
+overall concordance rate was highest for breast cancer ( 90%) and lowest for gastric cancer( 58%). However, when accepting only MDT’s
+recommendations consistent with the green ("recommended") category,
+the overall concordance rate fell to only 29.9% for gastric cancer,
+with the overall concordance of rectal cancer being the highest at
+81.8%. Data also shows a statistically significant difference in consistency
+for different age groups and clinical stages. Consistency for
+patients >70 years of age was higher than the consistency for older
+patients (P = 0.03). Likewise, the consistency of stage I - III was higher
+than those of stage IV (except for lung cancer). <br> <br>
+                    <div class="subheading mb-3"> Limitations </div>
+                    Consistency between WFO and MDT is not satisfactory
+for older patients or patients with advanced cancer [1, 5]. Furthermore,
+the recommendations are limited to certain regions. Ethnic
+groups differ in sensitivity and tolerance for some therapeutic drugs
+or treatment methods, which WFO does not consider. Some recommended
+drugs and therapies are also unavailable in specific countries
+[1]. WFO does not take into account the reversibility of patients’ attributes.
+WFO may exclude effective treatment plans based on abnormal
+biochemical results, even if the causes behind these abnormalities
+are easily treatable and resolvable in a matter of days [1]. WFO does
+also not take into consideration the cost-effectiveness or insurance
+coverage of its recommended treatments [1].
+                    <hr>
+1. JIE, Zhou; ZHIYING, Zeng; LI, Li. A meta-analysis ofWatson for
+Oncology in clinical application. Scientific Reports. 2021, vol. 11,
+p. 5792. Available from doi: 10.1038/s41598-021-84973-5. <br>
+                    2. 5725-W51 IBM Watson for Oncology IBM Europe Sales Manual
+[https://www.ibm.com/common/ssi/ShowDoc.wss?docURL=
+/common / ssi / rep _ sm / 1 / 877 / ENUS5725 - W51 / index . html].
+[N.d.]. Accessed: 2022-12-01.<br>
+                    3. 5725-W51 IBM Watson for Oncology IBM US Sales Manual [https:
+//www.ibm.com/common/ssi/ShowDoc.wss?docURL=/common/
+ssi/rep_sm/1/872/ENUS5725-W51/index.htmly]. [N.d.]. Accessed:
+2022-12-01.<br>
+                    4. YU, Seong Hyeon; KIM, Myung Soo; CHUNG, Ho Seok;
+HWANG, Eu Chang; JUNG, Seung Il; KANG, TaekWon; KWON,
+Dongdeuk. Early experience withWatson for Oncology: a clinical
+decision-support system for prostate cancer treatment recommendations.
+World J. Urol. 2021, vol. 39, no. 2, pp. 407–413.<br>
+                    5. YUN, Hyeok Jun; KIM, Hee Jun; KIM, Soo Young; LEE, Yong
+Sang; LIM, Chi Young; CHANG, Hang-Seok; PARK, Cheong
+Soo. Adequacy and effectiveness of Watson for Oncology in the
+treatment of thyroid carcinoma. Front. Endocrinol. (Lausanne).
+2021, vol. 12, p. 585364.<br>
+                    6. SUWANVECHO, Suthida; SUWANRUSME, Harit; JIRAKULAPORN,
+Tanawat; ISSARACHAI, Surasit; TAECHAKRAICHANA,
+Nimit; LUNGCHUKIET, Palita; DECHA, Wimolrat; BOONPAKDEE,
+Wisanu; THANAKARN, Nittaya; WONGRATTANANON,
+Pattanawadee; PREININGER, Anita M; SOLOMON, Metasebya;
+WANG, Suwei; HEKMAT, Rezzan; DANKWA-MULLAN, Irene;
+SHORTLIFFE, Edward; PATEL, Vimla L; ARRIAGA, Yull; JACKSON,
+Gretchen Purcell; KIATIKAJORNTHADA, Narongsak.
+Comparison of an oncology clinical decision-support system’s
+recommendations with actual treatment decisions. Journal of
+the American Medical Informatics Association. 2021, vol. 28, no. 4,
+pp. 832–838. issn 1527-974X. Available from doi: 10.1093/jamia/
+ocaa334.
+                    </p>

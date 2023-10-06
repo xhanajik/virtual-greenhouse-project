@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">The DESIREE Project</h2>
+                     <div class="subheading mb-3"><a href="http://www.desiree-project.eu">webpage link</a></div>
+                    <p>
+                      The DESIREE Project, funded by The European Union, started in 2016
+and was completed in July 2019. One of Desiree’s many goals was to
+develop several tools focused on handling primary breast cancer. They
+designed and validated a working prototype of a decision support
+tool for the DESIREE platform [1]. <br>
+More information about the platform, live demo availability, and
+a short demo video is posted on their website: http://www.desireeproject.
+eu/news/successful-completion-desiree-project.
+                      <br> <br>
+                     <div class="subheading mb-3"> Data </div>
+                  DESIREE implements a Breast Cancer Knowledge Model
+(BCKM). The BCKM leans on an Entity-Attribute-Value data model,
+with the main entities being the patient, the breast side, and the lesion
+[2]. This structure supports rule-based and subsumption-based reasoning
+to deliver three types of recommendations: guideline-based,
+case-based, and experience-based.
+<br> <br>
+                     <div class="subheading mb-3"> Approach </div>
+
+                  It has been noted that conforming to clinical guidelines
+gives breast cancer patients better overall survival rates and a greater
+chance of recurrence-free survival [3]. DESIREE GL-DSS (Guideline-based)
+represents selected clinical practice guidelines as IF-THEN
+rules and yields patient-specific recommendations, mainly in the form
+of procedures grouped into care plans [4]. By doing this, the DSS has
+the potential to improve clinician compliance with clinical guidelines
+and, therefore, continuously support physicians in choosing welldocumented
+and researched treatment plans. <br><br>
+On the contrary, for non-guideline-compliant decisions, DESIREE
+EXP-DSS (Experience-based) takes into account previous clinical outcomes
+to calculate recommendations’ confidence value (CV). New
+IF-THEN rules for the knowledge base are created by combining the patient characteristics, criteria for non-compliance to guidelines taken
+into consideration by the clinicians, and the final treatment that the
+MTB decided upon. The CV for new rules is set to 0 and gradually
+changes according to the positive or negative results. Treatment response
+outcomes, adverse events, and patient-reported outcomes
+(mainly in the form of questionnaires that reflect patients’ subjective
+satisfaction and quality of life) are all used metrics that adjust the
+CV [5]. <br><br>
+                  The DESIREE CB-DSS (Case-based) depends on already solved
+cases, which are stored in the patient cases database. The DSS creates
+a query case and utilizes a similarity analyzer and retrieval algorithms
+to obtain the most similar patient cases. These cases can then be visualized
+using the rainbow box technique [4].
+                  <br> <br>
+                     <div class="subheading mb-3"> Usage </div>
+                  The DESIREE Project publish an official demo video [6],
+which demonstrated the platforms functionality well: <br> <br>
+Clinicians have to manually add new patients into the system, and
+the patient files can be later checked and updated. The platform also
+supports adding medical image data into patient files. Other types of
+data, such as treatment information, adverse events associated with
+treatment, and patient-reported outcomes, are also managed in the
+system. Each patient file in the system contains tabs for the patient’s
+demographic data, history, first-visit information, radiodiagnosis, nuclear
+medicine data, surgery data, pathology data, oncology data,
+radiotherapy data, genetic data, follow-up, and patient-reported outcomes.
+The system includes tools to visualize certain patient data or
+statistics of treatments and outcomes. DESIREE can then produce a
+summary of the patient’s current status and evolution and a timeline
+of all past tests and treatments. <br><br>
+The platform is also useful in the instance of a Breast Unit meeting
+(essentially an MDT meeting for BC), where the system presents
+relevant information, imaging data, and similar cases. The system also
+implements guidelines and a conformance and evidence level, which
+can be selected as the final treatment. Nevertheless, a non-guideline
+form of treatment can also be entered into the system, along with the
+specific criteria for non-compliance to guidelines. Among those are
+also the following treatment-related patient restrictions: no surgery, no mastectomy, no endocrine therapy, no chemotherapy, monetary constraints, avoid delaying surgery, and distance constraints.
+Final decisions, with all of the criteria, are later utilized to suggest
+patient-specific recommendations in similar cases.                  <br> <br>
+                     <div class="subheading mb-3"> Advantages </div>
+                  The DESIREE platform provides a clean, unified interface
+to store many kinds of patient data and provide treatment suggestions.
+It also automatically adds to the patient records the final
+decisions of Breast Unit meetings and implements interactive visualization
+tools. The three types of recommendations offer a multitude of
+treatment options. The CDSS also considers some basic patient preferences,
+which gives the system a great advantage over other systems
+in this study.
+<br> <br>
+     
+                    <div class="subheading mb-3"> Limitations </div>
+                  The online platform, while versatile, is not interconnected
+with any EHR system, so it will take health professionals considerable
+time to transfer patient data into the platform’s patient record.
+                    <hr>
+1. The DESIREE Project, Successful completion of the DESIREE Project
+[online] [visited on 2022-12-01]. Available from: http://www.
+desiree-project.eu/news/successful-completion-desireeproject.<br>
+                  2. REDJDAL, Akram; BOUAUD, Jacques; GUÉZENNEC, Gilles;
+GLIGOROV, Joseph; SEROUSSI, Brigitte. Reusing decisions made
+with one decision support system to assess a second decision support
+system: Introducing the notion of complex cases. In: Studies
+in Health Technology and Informatics. IOS Press, 2021. Studies in
+health technology and informatics.<br>
+                  3. PREBET, Coralie; BOUAUD, Jacques; GUÉZENNEC, Gilles;
+SEROUSSI, Brigitte. Taking into account the complementarity
+of contemporary breast cancer guidelines to leverage decision
+support in the DESIREE project. Stud. Health Technol. Inform. 2018,
+vol. 247, pp. 755–759.<br>
+                  4. SEROUSSI, Brigitte; LAMY, Jean-Baptiste; MURO, Naiara; LARBURU,
+Nekane; SEKAR, Booma Devi; GUÉZENNEC, Gilles;
+BOUAUD, Jacques. Implementing guideline-based, experiencebased,
+and case-based approaches to enrich decision support for
+the management of breast cancer patients in the DESIREE project.
+Stud. Health Technol. Inform. 2018, vol. 255, pp. 190–194.<br>
+                  5. MURO, Naiara; LARBURU, Nekane; BOUAUD, Jacques;
+SEROUSSI, Brigitte. Weighting experience-based decision
+support on the basis of clinical outcomes’ assessment. Stud.
+Health Technol. Inform. 2017, vol. 244, pp. 33–37.<br>
+                  6. DEMO v2: Decision Support and Information Management System
+for Breast Cancer by Desiree project [online]. 2018 [visited on 2022-
+12-01]. Available from: https://www.youtube.com/watch?v=
+nXEopw7_lv4.<br>
+                    </p>

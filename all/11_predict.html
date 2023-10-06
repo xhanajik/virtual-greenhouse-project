@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Predict: Breast Cancer</h2>
+                     <div class="subheading mb-3"><a href="https://breast.predict.nhs.uk">webpage link</a></div>
+                    <p>
+                      Predict: Breast Cancer consists of prediction models that can be used
+to help make informed decisions about treatment following surgery
+for early invasive breast cancer [1]. Its simple interface and usability
+make it a valuable tool for patients and oncologists [2]. Based on
+several patient parameters, it calculates the overall survival rates after
+five, ten, and fifteen years based on the selected post-surgery treatment
+plans. The treatment options included in the predictions are hormone
+therapy, chemotherapy (second and third generation), trastuzumab, bisphosphonates, and combinations of the forenamed therapies [3].
+The tool is available at https://breast.predict.nhs.uk.
+<br> <br>
+                     <div class="subheading mb-3"> Approach </div>
+Data from over 5,500 breast cancer patients were used in
+the development of Predict: Breast Cancer. The tool comprises two
+separate prediction models for ER-positive and ER-negative breast
+cancer. Both models are multivariablefractional polynomial models
+derived using Cox (proportional hazards) regression, which was used
+to calculate the risk-factor coefficients for breast cancer mortality and
+treatment risk factors [1, 4]. The coefficients for individual risk
+factors and the open-sourced implementation of the Predict models
+are available at https://breast.predict.nhs.uk/legal/algorithm.
+                  <br> <br>
+                    <div class="subheading mb-3"> Usage </div>
+                  The Predict: Breast Cancer system is web-based and very intuitive.
+After selecting the right patient and tumor characteristics on the
+"Predict Tool" tab on their website, the system calculates the results,
+which are presented on the same page. The results can be displayed in
+the formof tables, curves, charts, texts, or icons [2]. The results obtain
+information about the percentage of women who survive at least the
+set amount of years (5, 10, or 15) post-surgery and the additional
+benefit (by how much this percentage grows) with the individual
+adjuvant treatments. <br><br>
+The benefit values can then be used to decide whether the additional
+treatment is profitable. For example, the Cambridge Breast Unit
+suggests that if the absolute 10-year survival benefit from adjuvant
+chemotherapy is <3%, chemotherapy should not be recommended.
+If it is 3-5%, chemotherapy should be discussed as a possible option,
+and in cases where it is >5%, chemotherapy should be recommended
+[3]. <br><br>
+Other than the prediction tool itself, the platform includes supplementary
+information such as an overview of the tool, the validation
+process, an explanation of the algorithm, and others [3,4,5].
+                  <br> <br>
+                    <div class="subheading mb-3"> Advantages </div>
+                  The tool has an updated interface created via a usercentered
+design process to make it as simple as possible, with iterative
+prototype testing with patients and medical professionals [2]. Predict is also available in 6 different languages. Therefore, the system caters
+to a wide range of users with varying levels of computer literacy. <br><br>
+One of its main benefits is that it can be used to improve the patient’s
+understanding of how different adjuvant therapies can affect
+survival rates and help the patient consider whether or not they will
+accept additional treatments should their oncologist suggest them.
+                  
+<br> <br>
+                    <div class="subheading mb-3"> Limitations </div>
+                  The predictive models do not take into consideration the
+possible side effects [5], which can significantly impact the patients’
+lifestyles or the comorbidities of individual patients [2]. <br>
+Moreover, while the tool effectively supports shared decision-making,
+its functionality is rather limited. It provides predictions for
+general adjuvant treatment methods (for example, chemotherapy or
+hormone therapy), yet it does not offer any patient-tailored drug recommendations,
+for example, specific chemotherapeutic agents. However,
+Predict: Breast Cancer could be used to assess the overall need
+for adjuvant therapies and be followed up with another system, for
+instance, a CDSS that links actionable variants from sequenced tumor
+samples to drugs to create a treatment plan.<br>
+Nevertheless, the system is still only limited to only certain types
+of breast cancer [5], as well as specific additional treatments (for
+example, radiation therapy is not included) [2].
+                    <hr>
+1. CANDIDO DOS REIS, Francisco J.; WISHART, Gordon
+C.; DICKS, Ed M.; GREENBERG, David; RASHBASS, Jem;
+SCHMIDT, Marjanka K.; BROEK, Alexandra J. van den; ELLIS,
+Ian O.; GREEN, Andrew; RAKHA, Emad; MAISHMAN, Tom;
+ECCLES, Diana M.; PHAROAH, Paul D. P. An updated PREDICT
+breast cancer prognostication and treatment benefit prediction
+model with independent validation. Breast Cancer Research.
+2017, vol. 19, no. 1, p. 58. issn 1465-542X. Available from doi:
+10.1186/s13058-017-0852-3.<br>
+                  2. FARMER, George D; PEARSON, Mike; SKYLARK, William J;
+FREEMAN, Alexandra L J; SPIEGELHALTER, David J. Redevelopment
+of the Predict: Breast Cancer website and recommendations
+for developing interfaces to support decision-making.
+Cancer Med. 2021, vol. 10, no. 15, pp. 5141–5153.<br>
+                  3. Predict: Breast Cancer, Technical [online] [visited on 2022-12-01].
+Available from: https : / / breast . predict . nhs . uk / about /
+technical.<br>
+                  4. Predict: Breast Cancer, Algorithm [online] [visited on 2022-12-01].
+Available from: https : / / breast . predict . nhs . uk / legal /
+algorithm<br>
+                  5. Predict: Breast Cancer, Overview [online] [visited on 2022-12-01].
+Available from: https : / / breast . predict . nhs . uk / about /
+overview/.<br>
+                    </p>

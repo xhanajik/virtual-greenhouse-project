@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Oncology Pharmacotherapy Decision Support System</h2>
+                     <div class="subheading mb-3"><a href="https://oncopdss.capitalbiobigdata.com/rest/pageForward">webpage link</a></div>
+                    <p>
+                      Oncology Pharmacotherapy Decision Support System (OncoPDSS) is
+a web server that can be used by researchers and clinicians alike, as it
+serves as a knowledge base on cancer precision medicine. Xu et al. [1]
+aimed to not only ensure that the small amount of clinically actionable
+mutations is well recorded but also that there is a decision support tool
+that can aid clinicians and oncologists in keeping abreast of the rapid
+advancements in clinical tumor sequencing. Specifically, the evidence-based
+CDSS helps clinicians with pharmacotherapy decision-making
+by using actionable alterations associated with clinical implications to
+interpret sequencing results accurately at the individual level. <br><br>
+To continue fulfilling their objective, they plan to continue to incorporate
+more actionable evidence, drug indications, and clinical trial
+information to keep the knowledge base up to date [1].
+                      <br> <br>
+                     <div class="subheading mb-3"> Data </div>
+                  The OncoPDSS knowledgebase curates oncology pharmacotherapy
+evidence consisting of alteration-drug associations (compiled
+from the CIViC, CGI, OncoKB, and PubMed databases), information
+about clinical-trial (from the ClinicalTrials.gov database), and FDAapproved
+drug indications [37]. The evidence in the KB is arranged
+into levels. To achieve this, the actionable evidence was divided into
+six categories based on their initial sources: case reports, clinical trials,
+approved drug labels, guidelines, inferential procedures, and preclinical
+information. As of 2022, the OncoPDSS knowledge base contained
+9,754 actionable evidence, 483 drug indications, 13,280 clinical trials,
+2,140 ant-cancer agents, 784 cancer-related genes, 642 cancer types,
+and 30,839 alterations (related to at least 29 alteration types) [1, 2].
+<br> <br>
+                     <div class="subheading mb-3"> Approach </div>
+To interpret each piece of evidence, the CDSS assigns a
+’direction’ to the pharmacotherapy according to each patient’s specific
+cancer type and all detected alterations. The three types of directions
+are:
+                  <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                           Positive - evidence shows that oncologists can take the therapy
+into consideration
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Negative - unclear if the therapy is safe or effective
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Unclassified - potentially effective therapy but not approved/accepted
+by FDA or guidelines (mainly included for research purposes)
+                        </li>
+                    </ul> <br> <br>
+                  Therapy is generally considered ’positive’ if the evidence indicates
+its sensitivity and safety. On the contrary, ’negative’ therapies show
+signs of resistance and high toxicity. What is more, therapy will never
+be tagged as ’positive’ if there is any actionable evidence proving its
+ineffectiveness [1].
+                  <br> <br>
+                    <div class="subheading mb-3"> Usage </div>
+                  The CDSS is available on their website under the "interpret"
+button on the navigation bar. Firstly, you choose the cancer types (one
+or more) via a cancer tree, then the system asks for alterations in the
+standard VCF file, pre-defined Excel file, text file format, or via the text
+field as an input. In the query, the user can specify information about
+drug indications and clinical trials so that only relevant clinical trials
+are evaluated [1, 2]. In the interpretation report, the alteration-drug
+association query result and the positive pharmacotherapies will be
+most influential for clinicians [1].
+<br> <br>
+                    <div class="subheading mb-3"> Advantages </div>
+                  Besides the overall usefulness of the continuously updated
+webserver to practicing oncologists and cancer researchers, the
+system has a couple of neat features. Not only does the CDSS find suitable
+clinical trials, but it further helps the patient decide by showing
+the nearest treatment centers based on the patient’s location [1]. The
+CDSS is also practical in the sense that it does not merely suggest the
+best therapies; it also mentions non-effective therapies with evidence
+of their unsuitability [1].
+                  <br> <br>
+                    <div class="subheading mb-3"> Limitations </div>
+                  While it is the first tool of its kind [1], OncoPDSS only
+focuses solely on finding pharmacotherapy treatments from patientspecific
+alterations. The system cannot be used to design a comprehensive
+treatment plan containing radiotherapy or surgery. Moreover, it seems that FDA approval is required for therapies to be classified as
+’positive’ [1]. It would be reasonable to include therapies approved
+by other agencies, such as EMA. One of their self-reported shortcomings
+is the lack of consideration of drug-drug interactions and even
+food-drug interactions, yet these interactions influence drug responses
+[1].
+                    <hr>
+1. XU, Quan; ZHAI, Jin-Cheng; HUO, Cai-Qin; LI, Yang; DONG,
+Xue-Jiao; LI, Dong-Fang; HUANG, Ru-Dan; SHEN, Chuang;
+CHANG, Yu-Jun; ZENG, Xi-Ling; MENG, Fan-Lin; YANG, Fang;
+ZHANG, Wan-Ling; ZHANG, Sheng-Nan; ZHOU, Yi-Ming;
+ZHANG, Zhi. OncoPDSS: an evidence-based clinical decision
+support system for oncology pharmacotherapy at the individual
+level. BMC Cancer. 2020, vol. 20, no. 1, p. 740.<br>
+                  2. OncoPDSS, What does OncoPDSS do? [Online] [visited on 2022-
+12-01]. Available from: https://oncopdss.capitalbiobigdata.
+com.<br>
+                    </p>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CDSS - An Overview</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="/CDSS-overview/index.html">
+                <span class="d-block d-lg-none">Clinical Decision Support Systems - An Overview</span>
+                <span class="d-none d-lg-block"><img class="img-profile rounded-circle mx-auto mb-2" src="/CDSS-overview/assets/img/icon.jpg" alt="..." /><br><br>CDSS - An Overview</span>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html">All reviewed CDSS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/categories.html">Summary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <header>
+           <p style="margin-top:1,5cm"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all.html"><i class="arrow left"></i> <b>BACK TO ALL</b></a></p>
+        </header>
+        <div class="container-fluid p-0">
+            <!-- CDSS info-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Prostate Cancer Survival Calculator According to Initial Treatment Modality</h2>
+                     <div class="subheading mb-3"><a href="https://scapcalculator.yuhs.ac">webpage link</a></div>
+                    <p>
+                      In 2019, Koo et al. [45] published an online CDSS titled "
+                      Prostate
+Cancer Survival Calculator According to Initial Treatment Modality" which 
+employs an artificial neural network model to predict
+survival outcomes according to 5 routine initial treatment modalities [1]: active surveillance, radical prostatectomy, radiation therapy with androgen deprivation therapy, radiation therapy without androgen deprivation therapy, and androgen deprivation therapy. <br>
+                      The CDSS is available at https://scapcalculator.yuhs.ac.
+<br> <br>
+                     <div class="subheading mb-3"> Approach </div>
+As already mentioned, guidelines do not present a preferable
+treatment option out of the five of interest. A novel approach
+executed in the form of a Long Short Term Memory (LSTM) ANN
+model can predict castration-resistant prostate cancer-free survival,
+cancer-specific survival, and overall survival depending on the initial
+treatment modality and thus recommending the best patient-specific
+treatment plans [1]. <br><br>
+                  Three differentANNswere trained on data retrieved from the SCaP
+database. The training dataset included a total of 7,267 patient files
+from the years 1988-2017. Their initial treatment selectionwas based on
+surgeon discretion and patient preference [1]. Nineteen pretreatment
+clinicopathological covariates (attributes) were extracted from patient
+files, and the initial treatment strategies were categorized into the
+five mentioned modalities. Then they observed the survival status
+and the cause of death—mainly whether or not the death could be
+attributed to prostate cancer, prostate cancer treatment complications,
+or if progressive metastatic castration-resistant prostate cancer was
+present.<br><br>
+                  Out of the three developed ANN models in this study, the LSTM
+ANN architecture was deemed superior. It outscored the two other
+ANN models and a baseline Cox-regression model in a five-fold crossvalidation
+in all survival endpoints [1].
+<br> <br>
+                    <div class="subheading mb-3"> Advantages </div>
+                  A CDSS like this one not only serves as an accurate prediction
+tool, but also promotes shared decision-making. The authors
+aimed to develop an online tool that can be used to actively include
+the patient in the selection of a treatment plan by providing metrics
+used during patient counseling to compare optimal treatment options
+at a deeper level and asses which of them sufficiently reflects the patient’s
+personal preferences. For this reason, they hope that using their
+easily accessible and usable free CDSS will result in more positive
+patient-reported outcomes and decision satisfaction. Koo et al. [1]
+also mention the usefulness of this CDSS for patients with unusual
+disease features, such as avanced low-grade or localized high-grade
+diseases, as their CDSS model does a better job than others at representing
+patient risk.
+                  <br> <br>
+                    <div class="subheading mb-3"> Limitations </div>
+                  All patients in the training datasetwere of Asian ethnicity.
+While the estimated median cancer-specific survival is consistent with
+current survival estimates, validation withworldwide population data
+is needed to confirm the model’s generalizability [1]. This CDSS only
+predicts outcomes for the five standard treatment options. Patient
+cases in which adjuvant treatments that defied standard recommendations
+were administered were excluded from the training dataset
+[1]. What is more, data concerning subsequent treatments were also
+not included, so the model does not offer survival predictions for
+patients with multiple lines of therapy. Long-term treatment toxicity
+and side effect were also out of the scope of the study; nevertheless,
+these are essential factors for conforming to the patient’s treatment
+preferences and expected quality of life. Lastly, treatment options and
+their executions have greatly improved since 1988, so some estimated
+outcomes might not reflect current expectations [1].
+                    <hr>
+1. KOO, Kyo Chul; LEE, Kwang Suk; KIM, Suah; MIN, Choongki;
+MIN, Gyu Rang; LEE, Young Hwa; HAN, Woong Kyu; RHA,
+Koon Ho; HONG, Sung Joon; YANG, Seung Choul; CHUNG,
+Byung Ha. Long short-term memory artificial neural network
+model for prediction of prostate cancer survival outcomes according
+to initial treatment strategy: development of an online
+decision-making support system. World J. Urol. 2020, vol. 38, no.
+10, pp. 2469–2476.<br>
+                    </p>
