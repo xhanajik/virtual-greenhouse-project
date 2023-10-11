@@ -52,21 +52,17 @@
                     <p>hihi</p>
                     <hr>
                     <py-script>print("Hello, World!")</py-script>
-                      <fieldset>
-                        <legend>Frequency<sub>1</sub></legend>
-                        <input id="range1"
-                          type="range" min="440" max="442" step="0.1" value="440">
-                        <label for="range1">440</label> Hz
-                      </fieldset>
-                      <fieldset>
+                    <fieldset>
                         <legend>Frequency<sub>2</sub></legend>
-                        <input id="range2"
-                          type="range" min="440" max="442" step="0.1" value="441">
-                        <label for="range2">441</label> Hz
-                      </fieldset>
+                        <div class="subheading mb-3"> Frequency<sub>1 </div>
+                        <input id="range1"
+                          type="range" min="0" max="100" step="1" value="100">
+                        <label for="range1">100</label> %
+                    </fieldset>
                       <canvas id="chart"></canvas>
                       <py-script src="src/controls.py"></py-script>
                       <script src="src/plotting.js"></script>
+            <hr>
         </div>
         <!-- Bootstrap core JS-->
         <script src="js/cdn.jsdelivr.net_npm_bootstrap@5.1.3_dist_js_bootstrap.bundle.min.js"></script>
