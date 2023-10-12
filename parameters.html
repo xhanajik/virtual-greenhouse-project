@@ -82,6 +82,10 @@
                           type="range" min="0" max="100" step="1" value="100">
                         <label for="range1">100</label> %
                      </fieldset>
+                     <py-button label="ON/OFF" styles="btn big">
+                        def on_click(event):
+                        print(event)
+                    </py-button>
                     <legend>Current light intensity - %</legend>
                     <canvas id="chart2"></canvas>
                     <py-script src="python/controls_li.py"></py-script>
