@@ -2,8 +2,8 @@ const chart = new Chart("chart", {
   type: "line",
   data: {
     datasets: [{
-        borderColor: "#007cfb",
-        backgroundColor: "#579ade",
+        borderColor: "#579ade",
+        backgroundColor: "#2f79c4",
       }
     ]
   },
