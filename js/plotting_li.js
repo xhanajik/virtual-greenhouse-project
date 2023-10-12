@@ -1,4 +1,4 @@
-const chart = new Chart("chart", {
+const chart = new Chart("chart2", {
   type: "line",
   data: {
     datasets: [{
