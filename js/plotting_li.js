@@ -3,7 +3,7 @@ const chart = new Chart("chart", {
   data: {
     datasets: [{
         borderColor: "#007cfb",
-        backgroundColor: "#0062c5",
+        backgroundColor: "#e3c04d",
       }
     ]
   },
