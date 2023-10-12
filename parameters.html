@@ -48,12 +48,15 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Humidity:</h2>
                      <fieldset>
-                        <legend>Frequency<sub>2</sub></legend>
-                        <div class="subheading mb-3"> Current humidity level - </div>
+                        <legend>Current humidity level - /sub></legend>
+                        <!--div class="subheading mb-3"> Current humidity level - </div-->
                         <input id="range1"
                           type="range" min="0" max="100" step="1" value="100">
                         <label for="range1">100</label> %
                      </fieldset>
+                     <canvas id="chart"></canvas>
+                     <py-script src="idk1/controls.py"></py-script>
+                     <script src="idk1/plotting.js"></script>
                     <!--<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all/cdss1.html">Clickable subheading</a></h3>
