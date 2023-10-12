@@ -2,7 +2,7 @@ import numpy as np
 from pyodide import create_proxy, to_js
 
 from js import updateChart
-from li import wave
+from h import wave
 
 range1 = document.querySelector("#range1")
 
