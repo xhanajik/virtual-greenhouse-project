@@ -49,15 +49,8 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Humidity:</h2>
                     <legend>Current humidity level - (%) </legend>
-                     <fieldset>
-                        <legend>Current humidity level - /sub></legend>
-                        <!--div class="subheading mb-3"> Current humidity level - </div-->
-                        <input id="range1"
-                          type="range" min="0" max="100" step="1" value="100">
-                        <label for="range1">100</label> %
-                     </fieldset>
                      <py-script>
-                         if true:
+                         if True:
                              print("REAL-TIME DATA NOT AVAILABLE")
                      </py-script>
                      <canvas id="chart"></canvas>
@@ -75,29 +68,18 @@
                         -->
                     <hr>
                     <h2 class="mb-5">Temperature:</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all/cdss1.html">Clickable subheading</a></h3>
-                            <div class="subheading mb-3">Subsubheading</div>
-                            <p>Text.</p>
-                        </div>
-                    </div>
+                    <legend>Current humidity level - (%) </legend>
                     <h2 class="mb-5">Light Intensity:</h2>
-                    <legend>Current light intensity - /sub></legend>
-                    <fieldset>
-                        <legend>Current humidity level - %</legend>
-                        <div class="subheading mb-3">Adjust light intensity in the greenhouse</div>
+                     <fieldset>
+                        <div class="subheading mb-3">Adjust light intensity in the greenhouse:</div>
                         <input id="range1"
                           type="range" min="0" max="100" step="1" value="100">
                         <label for="range1">100</label> %
                      </fieldset>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a class="nav-link js-scroll-trigger" href="/CDSS-overview/all/cdss1.html">Clickable subheading</a></h3>
-                            <div class="subheading mb-3">Subsubheading</div>
-                            <p>Text.</p>
-                        </div>
-                    </div>
+                    <legend>Current light intensity - %</legend>
+                    <canvas id="chart"></canvas>
+                    <py-script src="idk1/controls.py"></py-script>
+                    <script src="idk1/plotting.js"></script>
                     <hr>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
