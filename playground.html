@@ -11,12 +11,12 @@
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- moje skript-->
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script> 
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <py-env>
           - numpy
           - paths:
             - idk1/waves.py
+            - python/fc.py
         </py-env>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -37,8 +37,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:white;" href="/virtual-greenhouse-project/index.html">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/virtual-greenhouse-project/parameters.html">Real-time parameters</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/virtual-greenhouse-project/alerts.html">Alerts</a></li>
-                    <!--li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li-->
                 </ul>
             </div>
         </nav>
@@ -52,6 +50,7 @@
                     <p>hihi</p>
                     <hr>
                     <py-script>print("Hello, World!")</py-script>
+                    <py-script src="python/fc.py"></py-script>
                     <fieldset>
                         <legend>Frequency<sub>2</sub></legend>
                         <div class="subheading mb-3"> Frequency<sub>1 </div>
