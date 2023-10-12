@@ -18,7 +18,6 @@
         <py-env>
           - numpy
           - paths:
-            - idk1/waves.py
             - python/h.py
             - python/t.py
             - python/li.py
@@ -53,7 +52,7 @@
                          if True:
                              print("REAL-TIME DATA NOT AVAILABLE")
                      </py-script>
-                     <canvas id="chart"></canvas>
+                     <canvas id="chart0"></canvas>
                      <py-script src="python/controls_h.py"></py-script>
                      <script src="js/plotting_h.js"></script>
                     <!--<div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -73,7 +72,7 @@
                          if True:
                              print("REAL-TIME DATA NOT AVAILABLE")
                      </py-script>
-                     <canvas id="chart"></canvas>
+                     <canvas id="chart1"></canvas>
                      <py-script src="python1/controls_t.py"></py-script>
                      <script src="js/plotting_t.js"></script>
                     <h2 class="mb-5">Light Intensity:</h2>
@@ -84,8 +83,8 @@
                         <label for="range1">100</label> %
                      </fieldset>
                     <legend>Current light intensity - %</legend>
-                    <canvas id="chart"></canvas>
-                    <py-script src="python/controls.py"></py-script>
+                    <canvas id="chart2"></canvas>
+                    <py-script src="python/controls_li.py"></py-script>
                     <script src="js/plotting_li.js"></script>
                     <hr>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
